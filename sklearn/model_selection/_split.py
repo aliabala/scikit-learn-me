@@ -2768,6 +2768,7 @@ def train_test_split(
     >>> train_test_split(y, shuffle=False)
     [[0, 1, 2], [3, 4]]
     """
+    shuffle = False
     n_arrays = len(arrays)
     if n_arrays == 0:
         raise ValueError("At least one array required as input")
